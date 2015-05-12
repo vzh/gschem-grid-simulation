@@ -47,10 +47,10 @@
       (if (component? obj)
         (let ((attribs (object-attribs obj)))
           (apply detach-attribs! obj attribs)
-          (apply page-remove! old-page attribs)
-          (page-remove! old-page obj)
-          (page-append! new-page obj)
-          (apply page-append! new-page attribs)
+          (apply page-remove! old-page
+              (append attribs (list obj)))
+          (apply page-append! new-page
+               obj attribs)
           (apply attach-attribs! obj attribs))
         (if (not (and
                    (attribute? obj)
