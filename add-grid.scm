@@ -44,6 +44,9 @@
 (define (page-move-objects! old-page new-page objects)
   (for-each
     (lambda (obj)
+      ; If the object is a component we must first detach its
+      ; attributes and remove them and the object, and then append
+      ; and attach them in the reverse order
       (if (component? obj)
         (let ((attribs (object-attribs obj)))
           (apply detach-attribs! obj attribs)
