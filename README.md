@@ -3,7 +3,7 @@ Gschem grid simulation script
 
 Installation
 ------------
-  Copy the script *add-grid.scm* & *gafrc* to your projects' directory.
+  Copy the script *add-grid.scm* & *gafrc* into your projects' directory.
 
 Setup
 -----
