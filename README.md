@@ -1,5 +1,6 @@
 Gschem grid simulation script
 =============================
+*Source code transferred to my gschem-goodies repository and this repository will be removed soon!*
 
 Installation
 ------------
